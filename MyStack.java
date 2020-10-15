@@ -1,5 +1,4 @@
 package Stacks_and_Queues;
-
 public class MyStack<K>{
 	public static void main(String[] args) {
 		System.out.println("Welcome to the Stack Queue Program.");
@@ -13,6 +12,9 @@ public class MyStack<K>{
 	}
 	public INode<K> peak(){
 		return myLinkedList.head;
+	}
+	public INode<K> pop() {
+		return myLinkedList.pop();
 	}
 	public void printStack() {
 		myLinkedList.printMyNodes();
